@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TaskThree</string>
+    <string name="song_start">0:00</string>
+    <string name="web_view">Web View</string>
+    <string name="song">Song</string>
+    <string name="video">Video</string>
+</resources>
