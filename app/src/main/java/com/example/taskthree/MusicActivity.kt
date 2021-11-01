@@ -34,6 +34,7 @@ class MusicActivity : AppCompatActivity() {
 
             override fun onStopTrackingTouch(seekBar: SeekBar?) {
                 seekBar?.progress?.let { mediaPlayer.seekTo(it) }
+                mediaPlayer.start()
             }
         })
         // Start Media Player
@@ -103,5 +104,11 @@ class MusicActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         mediaPlayer.reset()
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        mediaPlayer = MediaPlayer.create(this, R.raw.fady_shewaya)
+        binding.playPause.setImageResource(R.drawable.play_icon)
     }
 }

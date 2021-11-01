@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MusicActivity">
 
     <androidx.cardview.widget.CardView
@@ -37,12 +38,12 @@
 
         <TextView
             android:id="@+id/song_position"
-            style="@style/Theme.TaskThree.MusicActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
             android:text="@string/song_start"
             android:textSize="12sp" />
 
@@ -50,16 +51,17 @@
             android:id="@+id/seekBar"
             android:layout_width="320dp"
             android:layout_height="24dp"
+            android:progressBackgroundTint="@color/white"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/song_duration"
-            style="@style/Theme.TaskThree.MusicActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
+            android:textColor="@color/white"
             android:textSize="12sp" />
     </LinearLayout>
 
